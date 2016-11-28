@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" ">
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="MOVIES" />
+<meta name="description" content="MOVIES" />
+<title>电影切换</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link href="css/styles.css" type="text/css" media="all" rel="stylesheet" />
+<link href="css/skitter.styles.css" type="text/css" media="all" rel="stylesheet" />
+<link href="css/highlight.black.css" type="text/css" media="all" rel="stylesheet" />
+<link href="css/sexy-bookmarks-style.css" type="text/css" media="all" rel="stylesheet" />
+<script src="js/jquery-1.6.3.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.animate-colors-min.js"></script>
+<script src="js/jquery.skitter.min.js"></script>
+<script src="js/highlight.js"></script>
+<script src="js/sexy-bookmarks-public.js"></script>
+<script>
+	$(document).ready(function() {
+		
+		var options = {};
+	
+		if (document.location.search) {
+			var array = document.location.search.split('=');
+			var param = array[0].replace('?', '');
+			var value = array[1];
+			
+			if (param == 'animation') {
+				options.animation = value;
+			}
+			else if (param == 'type_navigation') {
+				if (value == 'dots_preview') {
+					$('.border_box').css({'marginBottom': '40px'});
+					options['dots'] = true;
+					options['preview'] = true;
+				}
+				else {
+					options[value] = true;
+					if (value == 'dots') $('.border_box').css({'marginBottom': '40px'});
+				}
+			}
+		}
+		
+		$('.box_skitter_large').skitter(options);
+		
+		// Highlight
+		$('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+		
+	});
+	</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+<body>
+<div id="Layer1" style="position:absolute; left:15px; top:17px; width:140px; height:85px; z-index:1; font-family: &quot;造字工房悦黑（非商用）细长体&quot;; font-size: 66px;">MOVIES</div>
+<div id="Layer2" style="position:absolute; left:466px; top:42px; width:345px; height:44px; z-index:2; font-family: &quot;Adobe 繁黑體 Std B&quot;; font-size: 36px;">人生必看十大电影</div>
+<div id="Layer3" style="position:absolute; left:1015px; top:81px; width:152px; height:36px; z-index:3; font-family: &quot;微软雅黑&quot;, &quot;宋体&quot;, &quot;Adobe 仿宋 Std R&quot;; font-size: 36px;"><a href="../index.html">RETURN</a></div>
+<div id="page">
+	<div id="header">
+<script language="JavaScript" ></script>
+  </div>
+	
+	<div id="content">
+	  <div class="border_box">
+	    <div class="box_skitter box_skitter_large">
+				<ul>
+					<li><a href="#cube"><img src="images/罗马假日.jpg" class="cube" /></a><div class="label_text"><p>罗马假日</p></div></li>
+					<li><a href="#cubeRandom"><img src="images/阿甘正传.jpg" class="cubeRandom" /></a><div class="label_text"><p>阿甘正传</p></div></li>
+					<li><a href="#block"><img src="images/莫扎特传.jpg" class="block" /></a><div class="label_text"><p>莫扎特传</p></div></li>
+					<li><a href="#cubeStop"><img src="images/美国往事.jpg" class="cubeStop" /></a><div class="label_text"><p>美国往事</p></div></li>
+					<li><a href="#cubeHide"><img src="images/肖申克的救赎.jpg" class="cubeHide" /></a><div class="label_text"><p>肖申克的救赎</p></div></li>
+					<li><a href="#cubeSize"><img src="images/006.jpg" class="cubeSize" /></a><div class="label_text"><p>cubeSize</p></div></li>
+					<li><a href="#horizontal"><img src="images/007.jpg" class="horizontal" /></a><div class="label_text"><p>horizontal</p></div></li>
+					<li><a href="#showBars"><img src="images/008.jpg" class="showBars" /></a><div class="label_text"><p>showBars</p></div></li>
+					<li><a href="#showBarsRandom"><img src="images/009.jpg" class="showBarsRandom" /></a><div class="label_text"><p>showBarsRandom</p></div></li>
+					<li><a href="#tube"><img src="images/010.jpg" class="tube" /></a><div class="label_text"><p>tube</p></div></li>
+					
+				</ul>
+		</div>
+	    <div align="center"></div>
+	    <div align="left"></div>
+	  </div>
+	  <div id="examples-animations">
+		  <div>
+		</div>
+	  </div>
+		
+		<div id="styles_navigation"></div>
+		
+		<div id="styles_navigation">
+			<h2>&nbsp;</h2>
+		</div>
+  </div>
+	
+</div>
+</body>
+</html>
